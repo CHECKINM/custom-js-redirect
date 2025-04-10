@@ -1735,10 +1735,10 @@
                                                     return Object(r.c)(t), Object(u.a)() - e
                                                 }(), e = Math.max(p(), p()), f = Math.max(f, e), Object(r.a)(), 0 === t ? [2, !1] : 0 !== f ? [3, 2] : [4, Object(c.d)()]);
                                             case 1:
-												window.alert("000001");
+												window.alert("000005");
                                                 return n.sent() ? [2, !0] : [2, !1];
                                             case 2:
-												window.alert("000001");
+												window.alert("000002");
                                                 return [2, t >= 7 * f]
                                         }
                                     }))
