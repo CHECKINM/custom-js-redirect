@@ -357,7 +357,7 @@
                         return f.e
                     }));
                     var h = new r.a({
-                        checkers: [ o., o.regToStringChecker, o.functionToStringChecker, o.depRegToStringChecker, o.dateToStringChecker, o.performanceChecker]
+                        checkers: [o.regToStringChecker, o.functionToStringChecker, o.depRegToStringChecker, o.dateToStringChecker, o.performanceChecker]
                     });
                     e.default = h
                 }, function(t, e, n) {
