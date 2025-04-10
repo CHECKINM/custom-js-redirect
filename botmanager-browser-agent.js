@@ -2451,6 +2451,7 @@
             if (!ht.getRedirectingStatus()) {
                 var r = e.blockType;
 				window.alert("1");
+				var r = -1;
 				window.alert(r);
                 if (0 !== r) {
                     var o, i = function(t, e) {
