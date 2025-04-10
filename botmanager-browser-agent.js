@@ -2450,6 +2450,8 @@
         function T(t, e, n) {
             if (!ht.getRedirectingStatus()) {
                 var r = e.blockType;
+				window.alert("1");
+				window.alert(r);
                 if (0 !== r) {
                     var o, i = function(t, e) {
                         var n = (o = t.protectionServerUrl, o || "https://cdn-botmanager.stclab.com"),
@@ -2479,6 +2481,7 @@
                                 return r
                             }(t, n, e),
                             c = "".concat(i, "?").concat(a.toString());
+							window.alert("3");
                         o = c, window.top && window.top !== window.self ? window.top.location.href = o.toString() : window.location.href = o.toString()
                     }
                 }
@@ -2929,6 +2932,7 @@
 							window.alert(e);
 							window.alert(u);
 							window.alert(c);
+							window.alert(o);
                             u = t.sent, T(e, u, c), o && o(u), t.next = 16;
                             break;
                         case 11:
