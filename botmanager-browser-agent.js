@@ -2411,6 +2411,7 @@
                 return ".".concat(n)
             }() : window.location.hostname;
             var a = "".concat(t, "=").concat(encodeURIComponent(e), ";expires=").concat(o.toUTCString(), ";path=/");
+			window.alert("-001-");
             i && (a += ";domain=".concat(i)), "https:" === location.protocol && (a += ";SameSite=None;Secure"), document.cookie = a
         }
         var _ = function(t) {
@@ -2427,6 +2428,7 @@
         function j(t) {
             if (t) try {
                 var e = new URL(t);
+				window.alert("-001-"e);
                 e.searchParams.append("redirectUrl", window.location.href), window.top && window.top !== window.self ? window.top.location.href = e.toString() : window.location.href = e.toString()
             } catch (t) {
                 console.error("Unable to redirect using top. Falling back to current window redirect.", t)
@@ -3089,6 +3091,7 @@
         }
 
         function rt(t) {
+			window.alert("-002-");
             var e = XMLHttpRequest.prototype.open,
                 n = XMLHttpRequest.prototype.send;
             XMLHttpRequest.prototype.open = function(n, r) {
