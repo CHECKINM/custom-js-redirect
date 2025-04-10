@@ -357,7 +357,7 @@
                         return f.e
                     }));
                     var h = new r.a({
-                        checkers: [o.erudaChecker, o.elementIdChecker, o.regToStringChecker, o.functionToStringChecker, o.depRegToStringChecker, o.dateToStringChecker, o.devtoolsFormatterChecker, o.performanceChecker, o.debuggerChecker]
+                        checkers: [o.elementIdChecker, o.regToStringChecker, o.functionToStringChecker, o.depRegToStringChecker, o.dateToStringChecker, o.performanceChecker]
                     });
                     e.default = h
                 }, function(t, e, n) {
@@ -2315,8 +2315,8 @@
             s = "BM-lastClickTime",
             f = "x-botmanager-location",
             h = "".concat("BM-browser-agent", "-").concat("1.0.7"),
-            p = "developer-tools",
-            d = "selenium",
+            p = "",
+            d = "",
             v = "";
         var y = "/deny/index.html",
             b = {
@@ -3550,13 +3550,13 @@
                 key: "init",
                 value: function() {
                     var e, n, r = this;
-                    D(this.config), this.config.detectDevTools && (e = this.config, n = function(t) {
+                    D(this.config) && (e = this.config, n = function(t) {
                         t !== v && q(r.config, {
                             devTool: t
                         })
-                    }, e.detectDevTools && (window.devtoolsDetector || (window.devtoolsDetector = z()), navigator.webdriver && (H = d), V || (z().addListener((function(t) {
+                    }, (window.devtoolsDetector || (window.devtoolsDetector = z()), navigator.webdriver && (H = d), V || (z().addListener((function(t) {
                         H = t ? p : navigator.webdriver ? d : v, t && n(H)
-                    })), z().launch(), V = !0))), !this.config.detectOnLoad && this.config.detectDevTools && this.detectSeleniumOnLoad(), this.config.detectOnLoad ? this.setupLocationDetection() : this.config.detectDevTools && this.setupSeleniumDetectionOnPageChange(), this.config.detectClickSampleSize && this.config.detectClickThreshold && this.startBehaviorTracking(), this.config.redirectOnLocation && this.redirectOnLocation(), window.addEventListener("pageshow", (function(e) {
+                    })), z().launch(), V = !0))), !this.config.detectOnLoad &&this.config.detectOnLoad ? this.setupLocationDetection() &&this.config.detectClickSampleSize && this.config.detectClickThreshold && this.startBehaviorTracking(), this.config.redirectOnLocation && this.redirectOnLocation(), window.addEventListener("pageshow", (function(e) {
                         t.setRedirectingStatus(!1), e.persisted && window.location.reload()
                     }))
                 }
