@@ -2901,6 +2901,7 @@
                     for (;;) switch (t.prev = t.next) {
                         case 0:
                             return i = Object.keys(r).map((function(t) {
+								window.alert("TEST-111"i);
                                 return "".concat(encodeURIComponent(t), "=").concat(encodeURIComponent(r[t]))
                             })).join("&"), a = "".concat(e).concat(n, "?").concat(i), t.abrupt("return", new Promise((function(t, e) {
                                 var n = new AbortController,
@@ -2908,6 +2909,7 @@
                                     i = setTimeout((function() {
                                         return n.abort()
                                     }), o);
+									window.alert(a);
                                 fetch(a, {
                                     signal: r,
                                     headers: {
