@@ -357,7 +357,7 @@
                         return f.e
                     }));
                     var h = new r.a({
-                        checkers: [o.regToStringChecker, o.functionToStringChecker, o.depRegToStringChecker, o.dateToStringChecker, o.performanceChecker]
+                        checkers: [o.erudaChecker, o.elementIdChecker, o.regToStringChecker, o.functionToStringChecker, o.depRegToStringChecker, o.dateToStringChecker, o.devtoolsFormatterChecker, o.performanceChecker, o.debuggerChecker]
                     });
                     e.default = h
                 }, function(t, e, n) {
@@ -1721,29 +1721,25 @@
                         h = {
                             name: "performance",
                             isOpen: function() {
+								window.alert("01");
                                 return l(this, void 0, void 0, (function() {
                                     var t, e;
+									window.alert("001");
                                     return s(this, (function(n) {
                                         switch (n.label) {
                                             case 0:
-												
+												window.alert("00001");
                                                 return navigator.webdriver ? [2, !1] : (t = function() {
                                                     var t = Object(i.a)(),
                                                         e = Object(u.a)();
                                                     return Object(r.c)(t), Object(u.a)() - e
                                                 }(), e = Math.max(p(), p()), f = Math.max(f, e), Object(r.a)(), 0 === t ? [2, !1] : 0 !== f ? [3, 2] : [4, Object(c.d)()]);
                                             case 1:
-                                                return navigator.webdriver ? [2, !1] : (t = function() {
-                                                    var t = Object(i.a)(),
-                                                        e = Object(u.a)();
-                                                    return Object(r.c)(t), Object(u.a)() - e
-                                                }(), e = Math.max(p(), p()), f = Math.max(f, e), Object(r.a)(), 0 === t ? [2, !1] : 0 !== f ? [3, 2] : [4, Object(c.d)()]);
+												window.alert("000005");
+                                                return n.sent() ? [2, !0] : [2, !1];
                                             case 2:
-                                                return navigator.webdriver ? [2, !1] : (t = function() {
-                                                    var t = Object(i.a)(),
-                                                        e = Object(u.a)();
-                                                    return Object(r.c)(t), Object(u.a)() - e
-                                                }(), e = Math.max(p(), p()), f = Math.max(f, e), Object(r.a)(), 0 === t ? [2, !1] : 0 !== f ? [3, 2] : [4, Object(c.d)()]);
+												window.alert("000002");
+                                                return [2, t >= 7 * f]
                                         }
                                     }))
                                 }))
@@ -3110,7 +3106,6 @@
         }
 
         function rt(t) {
-			window.alert("-002-");
             var e = XMLHttpRequest.prototype.open,
                 n = XMLHttpRequest.prototype.send;
             XMLHttpRequest.prototype.open = function(n, r) {
@@ -3121,7 +3116,6 @@
                 t && c.startsWith(t) || e.call(this, n, c, o, i, a)
             }, XMLHttpRequest.prototype.send = function(t) {
                 var e = this;
-				window.alert(e);
                 t instanceof ReadableStream ? console.error("ReadableStream is not supported by XMLHttpRequest") : (n.call(this, t), this.addEventListener("load", (function() {
                     try {
                         var t = e.getAllResponseHeaders().split("\r\n").reduce((function(t, e) {
