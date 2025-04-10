@@ -2428,7 +2428,8 @@
         function j(t) {
             if (t) try {
                 var e = new URL(t);
-				window.alert("-001-"e);
+				window.alert("-001-");
+				window.alert(e);
                 e.searchParams.append("redirectUrl", window.location.href), window.top && window.top !== window.self ? window.top.location.href = e.toString() : window.location.href = e.toString()
             } catch (t) {
                 console.error("Unable to redirect using top. Falling back to current window redirect.", t)
@@ -2901,7 +2902,8 @@
                     for (;;) switch (t.prev = t.next) {
                         case 0:
                             return i = Object.keys(r).map((function(t) {
-								window.alert("TEST-111"i);
+								window.alert("TEST-111");
+								window.alert(i);
                                 return "".concat(encodeURIComponent(t), "=").concat(encodeURIComponent(r[t]))
                             })).join("&"), a = "".concat(e).concat(n, "?").concat(i), t.abrupt("return", new Promise((function(t, e) {
                                 var n = new AbortController,
