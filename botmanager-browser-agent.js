@@ -357,7 +357,7 @@
                         return f.e
                     }));
                     var h = new r.a({
-                        checkers: [o.erudaChecker, o.elementIdChecker, o.regToStringChecker, o.functionToStringChecker, o.depRegToStringChecker, o.dateToStringChecker, o.devtoolsFormatterChecker, o.performanceChecker, o.debuggerChecker]
+                        checkers: [ o., o.regToStringChecker, o.functionToStringChecker, o.depRegToStringChecker, o.dateToStringChecker, o.performanceChecker]
                     });
                     e.default = h
                 }, function(t, e, n) {
@@ -1873,6 +1873,8 @@
                             name: "eruda",
                             isOpen: function() {
                                 var t;
+								window.alert("000000000006");
+								window.alert(t);
                                 return r(this, void 0, void 0, (function() {
                                     return o(this, (function(e) {
                                         return "undefined" != typeof eruda ? [2, !0 === (null === (t = null === eruda || void 0 === eruda ? void 0 : eruda._devTools) || void 0 === t ? void 0 : t._isShow)] : [2, !1]
@@ -1880,6 +1882,8 @@
                                 }))
                             },
                             isEnable: function() {
+								window.alert("000000000003");
+								window.alert(r);
                                 return r(this, void 0, void 0, (function() {
                                     return o(this, (function(t) {
                                         return [2, !0]
@@ -2015,9 +2019,9 @@
                                 }))
                             },
                             isEnable: function() {
+							//이부분은 계속반복되는로딩
 								window.alert("000111011");
                                 return o(this, void 0, void 0, (function() {
-									window.alert("000111011");
                                     return i(this, (function(t) {
                                         return [2, !0]
                                     }))
@@ -2325,8 +2329,8 @@
             s = "BM-lastClickTime",
             f = "x-botmanager-location",
             h = "".concat("BM-browser-agent", "-").concat("1.0.7"),
-            p = "developer-tools",
-            d = "selenium",
+            p = "",
+            d = "",
             v = "";
         var y = "/deny/index.html",
             b = {
@@ -2911,16 +2915,24 @@
                                     i = setTimeout((function() {
                                         return n.abort()
                                     }), o);
-									window.alert(a);
+									
                                 fetch(a, {
                                     signal: r,
                                     headers: {
                                         Accept: "application/json",
                                         "Content-Type": "text/plain"
                                     }
+									window.alert(a);
+									window.alert("t1");
+									window.alert(r);
+									window.alert("t2");
                                 }).then((function(n) {
                                     clearTimeout(i), n.ok ? t(n.json()) : e("Request failed")
+									window.alert("t3");
+									window.alert(n.json());
                                 })).catch((function(t) {
+									window.alert("t5");
+									window.alert(t);
                                     e(t)
                                 }))
                             })));
@@ -2937,10 +2949,10 @@
         }
 
         function F() {
-		window.alert("TEST-1");
+		//window.alert("TEST-1");
             return (F = G(M().mark((function t(e, n, r, o) {
                 var i, a, c, u, l;
-				window.alert("TEST0");
+				//window.alert("TEST0");
                 return M().wrap((function(t) {
                     for (;;) switch (t.prev = t.next) {
                         case 0:
@@ -3584,9 +3596,6 @@
             }, {
                 key: "detectSeleniumOnLoad",
                 value: function() {
-                    navigator.webdriver && q(this.config, {
-                        devTool: d
-                    })
                 }
             }, {
                 key: "setupLocationDetection",
@@ -3610,9 +3619,6 @@
                     nt({
                         detectOnLoad: !1,
                         callback: function(e) {
-                            navigator.webdriver && q(t.config, {
-                                devTool: d
-                            })
                         }
                     })
                 }
