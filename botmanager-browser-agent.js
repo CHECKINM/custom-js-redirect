@@ -2915,17 +2915,16 @@
                                     i = setTimeout((function() {
                                         return n.abort()
                                     }), o);
-									
+									window.alert(a);
+									window.alert("t1");
+									window.alert(r);
+									window.alert("t2");	
                                 fetch(a, {
                                     signal: r,
                                     headers: {
                                         Accept: "application/json",
                                         "Content-Type": "text/plain"
                                     }
-									window.alert(a);
-									window.alert("t1");
-									window.alert(r);
-									window.alert("t2");
                                 }).then((function(n) {
                                     clearTimeout(i), n.ok ? t(n.json()) : e("Request failed")
 									window.alert("t3");
