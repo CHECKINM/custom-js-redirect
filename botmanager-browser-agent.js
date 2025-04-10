@@ -1721,19 +1721,24 @@
                         h = {
                             name: "performance",
                             isOpen: function() {
+								window.alert("01");
                                 return l(this, void 0, void 0, (function() {
                                     var t, e;
+									window.alert("001");
                                     return s(this, (function(n) {
                                         switch (n.label) {
                                             case 0:
+												window.alert("00001");
                                                 return navigator.webdriver ? [2, !1] : (t = function() {
                                                     var t = Object(i.a)(),
                                                         e = Object(u.a)();
                                                     return Object(r.c)(t), Object(u.a)() - e
                                                 }(), e = Math.max(p(), p()), f = Math.max(f, e), Object(r.a)(), 0 === t ? [2, !1] : 0 !== f ? [3, 2] : [4, Object(c.d)()]);
                                             case 1:
+												window.alert("000001");
                                                 return n.sent() ? [2, !0] : [2, !1];
                                             case 2:
+												window.alert("000001");
                                                 return [2, t >= 7 * f]
                                         }
                                     }))
@@ -2000,14 +2005,19 @@
                         u = {
                             name: "DevtoolsFormatters",
                             isOpen: function() {
+								window.alert("000101");
                                 return o(this, void 0, void 0, (function() {
+									window.alert("0001011");
                                     return i(this, (function(t) {
+										window.alert("00011011");
                                         return window.devtoolsFormatters ? -1 === window.devtoolsFormatters.indexOf(c) && window.devtoolsFormatters.push(c) : window.devtoolsFormatters = [c], a = !1, Object(r.b)({}), Object(r.a)(), [2, a]
                                     }))
                                 }))
                             },
                             isEnable: function() {
+								window.alert("000111011");
                                 return o(this, void 0, void 0, (function() {
+									window.alert("000111011");
                                     return i(this, (function(t) {
                                         return [2, !0]
                                     }))
@@ -2921,8 +2931,10 @@
         }
 
         function F() {
+		window.alert("TEST-1");
             return (F = G(M().mark((function t(e, n, r, o) {
                 var i, a, c, u, l;
+				window.alert("TEST0");
                 return M().wrap((function(t) {
                     for (;;) switch (t.prev = t.next) {
                         case 0:
