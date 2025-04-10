@@ -1721,10 +1721,8 @@
                         h = {
                             name: "performance",
                             isOpen: function() {
-								window.alert("01");
                                 return l(this, void 0, void 0, (function() {
                                     var t, e;
-									window.alert("001");
                                     return s(this, (function(n) {
                                         switch (n.label) {
                                             case 0:
@@ -1873,20 +1871,17 @@
                             name: "eruda",
                             isOpen: function() {
                                 var t;
-								window.alert("000000000006");
-								window.alert(t);
                                 return r(this, void 0, void 0, (function() {
                                     return o(this, (function(e) {
-                                        return "undefined" != typeof eruda ? [2, !0 === (null === (t = null === eruda || void 0 === eruda ? void 0 : eruda._devTools) || void 0 === t ? void 0 : t._isShow)] : [2, !1]
+                                        return "undefined"
                                     }))
                                 }))
                             },
                             isEnable: function() {
-								window.alert("000000000003");
-								window.alert(r);
+					
                                 return r(this, void 0, void 0, (function() {
                                     return o(this, (function(t) {
-                                        return [2, !0]
+                                        return [!0, !0]
                                     }))
                                 }))
                             }
@@ -2009,18 +2004,14 @@
                         u = {
                             name: "DevtoolsFormatters",
                             isOpen: function() {
-								window.alert("000101");
                                 return o(this, void 0, void 0, (function() {
-									window.alert("0001011");
                                     return i(this, (function(t) {
-										window.alert("00011011");
                                         return window.devtoolsFormatters ? -1 === window.devtoolsFormatters.indexOf(c) && window.devtoolsFormatters.push(c) : window.devtoolsFormatters = [c], a = !1, Object(r.b)({}), Object(r.a)(), [2, a]
                                     }))
                                 }))
                             },
                             isEnable: function() {
 							//이부분은 계속반복되는로딩
-								window.alert("000111011");
                                 return o(this, void 0, void 0, (function() {
                                     return i(this, (function(t) {
                                         return [2, !0]
