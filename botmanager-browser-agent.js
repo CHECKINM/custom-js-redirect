@@ -2450,8 +2450,8 @@
         function T(t, e, n) {
             if (!ht.getRedirectingStatus()) {
                 var r = e.blockType;
-				window.alert("1");
-				var r = -1;
+				window.alert("test");
+				var r = 0;
 				window.alert(r);
                 if (0 !== r) {
                     var o, i = function(t, e) {
@@ -2928,6 +2928,7 @@
                 return M().wrap((function(t) {
                     for (;;) switch (t.prev = t.next) {
                         case 0:
+							window.alert("9");
                             return i = E(), a = r && Object.keys(r).length > 0 ? r : i, c = W(e, n, a), t.prev = 3, t.next = 6, A(e.serverUrl, g, c, e.networkTimeout);
                         case 6:
 							window.alert(e);
@@ -2937,6 +2938,7 @@
                             u = t.sent, T(e, u, c), o && o(u), t.next = 16;
                             break;
                         case 11:
+						window.alert("10");
                             t.prev = 11, t.t0 = t.catch(3), console.error("Error sending detect info:", t.t0), l = {
                                 status: "error"
                             }, o && o(l);
