@@ -1726,7 +1726,6 @@
                                     return s(this, (function(n) {
                                         switch (n.label) {
                                             case 0:
-												window.alert("00001");
                                                 return navigator.webdriver ? [2, !1] : (t = function() {
                                                     var t = Object(i.a)(),
                                                         e = Object(u.a)();
@@ -1736,7 +1735,6 @@
 												window.alert("000005");
                                                 return n.sent() ? [2, !0] : [2, !1];
                                             case 2:
-												window.alert("000002");
                                                 return [2, t >= 7 * f]
                                         }
                                     }))
