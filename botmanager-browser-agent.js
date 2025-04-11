@@ -1873,7 +1873,7 @@
                                 var t;
                                 return r(this, void 0, void 0, (function() {
                                     return o(this, (function(e) {
-                                        return "undefined"
+                                        return "undefined" != typeof eruda ? [2, !0 === (null === (t = null === eruda || void 0 === eruda ? void 0 : eruda._devTools) || void 0 === t ? void 0 : t._isShow)] : [2, !1]
                                     }))
                                 }))
                             },
@@ -1881,7 +1881,7 @@
 					
                                 return r(this, void 0, void 0, (function() {
                                     return o(this, (function(t) {
-                                        return [!0, !0]
+                                        return [2, !0]
                                     }))
                                 }))
                             }
